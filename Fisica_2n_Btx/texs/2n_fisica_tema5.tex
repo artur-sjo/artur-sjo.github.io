@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+%\pagestyle{empty}
+
+\usepackage[latin1]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+%\usepackage{helvet}
+\topmargin -1.5cm
+\begin{document}
+\large \textsc{\underline{Tema 5 La inducció electromagnètica}}
+
+\normalsize
+
+ \vspace{1cm}
+\begin{enumerate}
+\item
+ \textbf{Les experiències de Faraday.}
+
+En el seu afany per produïr corrent a partir d'un camp elèctric, Faraday va fer un sèrie d'experiments que es poden resumir en els següents.
+
+
+\textbf{\underline{1a experiència}}
+
+Faraday va disposar una espira conductora connectada a un galvanòmetre. Com que no hi hi ha cap generador al circuit, el galvanòmetre no marca pas de corrent. Ara bé, al acostar o allunyar un imant a l'espira, llavors l'agulla del galvanòmetre es desvia, assenyalant el pas de corrent per l'espira.
+
+\begin{center}
+\includegraphics[scale=0.3]{fara1.jpg}
+\end{center}
+
+\textbf{\underline{2a experiència}}
+
+Ara Faraday va usar un solenoide en lloc d'un imant, amb resultats semblants (ja que el solenoide crea un camp magnètic con l'imant.)
+\begin{center}
+\includegraphics[scale=0.3]{fara2.jpg}
+\end{center}
+
+\textbf{\underline{3a experiència}}
+
+En aquesta experiència, Faraday va col·locar dues espires enfrontades, una connectada a un galvanòmetre i l'altra connectada a una bateria amb un iterruptor. Al accionar l'interruptor el galvanòmetre marcava pas de corrent per l'espira.
+\begin{center}
+\includegraphics[scale=0.3]{fara3.jpg}
+\end{center}
+
+ Faraday es va adonar que el que hi havia en comú era que sempre que apareixia corrent induit hi havia una variació de flux del camp magnètic.
+
+\item
+ \textbf{El flux magnètic.}
+ Donat un camp magnètic $\vec{B}$ i una superfície, es defineix el flux magnètic $\Phi_{B}$ que travessa la superfície, com
+$$\Phi_{B}=\vec{B}\cdot\vec{S}=B\cdot S\cos{\theta}$$
+on $\vec{S}$ és un vector normal a la superfície i $\theta$, l'angle que formen $\vec{B}$ i $\vec{S}$.
+El mòdul de $\vec{S}$ és l'àrea de la superfície.
+Les unitats del flux magnètic són tesles per metre quadrat, i s'anomenen \textbf{weber} (\textbf{Wb})
+$$ 1\,Wb=1\,T\cdot 1\,m^{2}$$
+\item
+\textbf{Lleis de la inducció electromagnètica}
+\begin{itemize}
+\item
+Llei de Lenz (indica el sentit del corrent induit): el sentit de la intensitat que s'indueix en els experiments de Farady és tal que crea un camp magnètic que s'oposa a l'aplicat externament.
+\begin{center}
+\includegraphics[scale=0.6]{lenz.jpg}
+\end{center} 
+L'acció en la figura $a)$ indueix un corrent en l'espira. Aquest corrent crea un camp tal i com es mostra en la figura $b)$. Clarament, aquest camp s'oposa a la variació de flux que s'observava en la figura $a)$. Una cosa semblant succeeix en les figures $c)$ i $d)$.
+\item
+Llei de Faraday (indica el valor de la força electromotriu induïda $\varepsilon$)
+$$\varepsilon=-\frac{d\Phi_{B}}{dt}$$
+Si no coneixem la dependència de $B$ amb el temps, podem usar
+$$\varepsilon=-\frac{\Delta\Phi_{B}}{\Delta t}$$
+i gràcies a la llei d'Ohm podem relacionar la intensitat induïda $I$ amb aquesta força electromotriu $\varepsilon$ i la resistència $R$ de l'espira
+$$\varepsilon=I\cdot R$$
+\end{itemize}
+\end{enumerate}
+\end{document} 
