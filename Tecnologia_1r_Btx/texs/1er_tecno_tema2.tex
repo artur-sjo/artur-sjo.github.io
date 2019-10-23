@@ -1,0 +1,302 @@
+
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[catalan]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usetheme{Warsaw}
+\usecolortheme{seahorse}
+\justifying
+\addtobeamertemplate{block begin}{}{\justifying}
+\beamertemplatetransparentcovereddynamic
+%\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+
+
+\begin{document}
+\title{Tecnologia Industrial 1r Batxillerat}
+\author{Artur Arroyo}
+\date{}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Tecnologia Industrial 1r Batxillerat}\tableofcontents
+%[pausesubsections]
+\end{frame}
+
+
+\section{Produció i distribució d'energia elèctrica}
+%\begin{frame}\frametitle{Title}
+%Each frame should have a title.
+%\end{frame}
+
+
+\subsection{Centrals elèctriques productores d'energia}
+\begin{frame}\frametitle{}
+\begin{block}{}
+La necessita de disposar d'energia elèctrica en grans quantitats i de manera immediata fa necessària l'existència de centrals productores que transformen l'energia primària en energia elèctrica. Aquestes instal·lions, nomenades \textbf{centrals elèctriques}, disposen d'un conjunt de màquines motrius i aparells que s'utilitzen per generar energia elèctrica.
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Producció, transport i consum d'energia}
+\justifying
+L'element principal de qualsevol central generadora d'energia, tret de les centrals foovoltàiques, és el \textbf{generador elèctric} o \textbf{alternador}, que transforma l'energia mecànica en energia elèctrica. Per transferir l'energia elèctrica fins als centres de consum s'utilitza la \textbf{xarxa elèctrica}, que consta de 
+\begin{itemize}
+\item
+Línies de transport.
+\item
+Estacions transformadores.
+\item
+Línies de distribució.
+\end{itemize}
+El principal inconvenient de l'energia elèctrica produïda a les centrals és que no es pot emmagatzemar; per tant, cal regular-ne la producció i ajustar-la al consum.
+\end{frame}
+
+
+\begin{frame}\frametitle{Tipus de centrals}
+Segons el servei que proporcionen en el consum global de la xarxa, es classifiquen en:
+\begin{itemize}
+\item
+\textbf{Centrals de base o principals.} Destinades a subministrar energia de forma contínua. Típicament, nuclears, grans termoelèctriques i hidroelèctriques.
+\item
+\textbf{Centrals de punta.} Projectades per cobrir demandes d'energia en hores punta.
+\item
+\textbf{Centrals de reserva.} Tenen per objectiu substituir totalment o parcial la producció d'una central de base, en cas d'avaria o reparació.
+\item
+\textbf{Centrals de bombeig.} Hidroelèctriques que aprofiten l'energia sobrant a les hores vall per bombar aigua a un embassament superior, i a les hores punta proporcionen energia a la xarxa.
+\end{itemize}
+\end{frame}
+
+
+\subsection{Centrals hidroelèctriques}
+\begin{frame}\frametitle{}
+\begin{block}{}
+ Les \textbf{centrals hidroelèctriques} es basen en l'aprofitament de l'energia de l'aigua que transporten els rius per convertir-la en energia elèctrica, i utilitzen turbines acoblades als alternadors.
+\end{block}
+Tipus de centrals hidroelèctriques
+\begin{itemize}
+\item
+\textbf{Centrals d'aigua fluent.} Centrals de poc rendiment que aprofiten directament el cabal d'un riu.
+\item
+\textbf{Centrals d'aigua embassada.} L'aigua s'acumula en un llac artificial o pantà es concrten en dos models
+\begin{itemize}
+\item
+\textbf{Centrals de derivació.} Les aigües del riu es desvien per mitjà d'una petita presa cap a un canal, amb el mínim desnivell possible. En un punt apropiat es construeix un petit dipòsit que alimenta una canonada forçada que condueix l'aigua fins a la turbina situada molt per sota del nivell del canal.
+\item
+\textbf{Centrals d'acumulació.} Es construeix una presa que obstaculitza el pas de l'aigua i forma un embassament.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks,t]\frametitle{Components d'una central hidroelèctrica.}
+\begin{enumerate}
+\item
+\textbf{La presa}
+\begin{block}{}
+La \textbf{presa} és una construcció, normalment de formigó, que s'aixeca sobre la llera del riu amb la finalitat de retenir l'aigua per tal d'elevar-ne el nivell i formar un embassament o llac artificial.
+\end{block}
+\begin{itemize}
+\item
+\textbf{Preses de gravetat.} La força de l'aigua és contrarestada pel mateix pes de la presa. El perfil és triangular i es necessita molt material per a la seva construcció. Amb la variant, \emph{presa de contraforts} es pot estalviar material.
+\item
+\textbf{Preses de volta o d'arc senzill.} Permeten un gran estalvi de material. La planta de la presa forma un arc que ha d'estar molt ben ancorat a les parts laterals del riu. 
+\end{itemize}
+\item
+\textbf{Els conductes d'aigua}
+Per tal d'alimentar les turbines, les preses tenen unes comportes que permeten regular el cabal protegides amb unes reixats metàl·lics. Els \textbf{sobreeixidors} es fan servir per regular el cabal del riu i els \textbf{desguassos}, a la part més fonda de la presa, permeten el buidatge de tot el pantà.  
+\item
+\textbf{La sala de màquines}
+A la sala de màquines hi ha els anoments grups \textbf{turboalternadors}. Es poden fer servir:
+\begin{itemize}
+\item
+\emph{Turbines Pelton.} Salts d'aigua de gran altura i cabal regular.
+\item
+\emph{Turbines Francis.} Salts mitjans i cabal variable.
+\item
+\emph{Turbines Kaplan.} Salts de poca altura i cabal molt variable.
+\end{itemize}
+\item
+\textbf{Transformadors i parc de distribució}
+La tensió del corrent elèctric obtinguda en els alternadors és igual o inferior a $20\,kV$. Per elevar la tensió a un valor adequat per al seu transport als centres consumidors s'utilitzen els \textbf{transformadors}. En el \textbf{parc de distribució}, la central es connecta a la xarxa de transport.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Centrals de bombeig o reversibles}
+\begin{block}{}
+Les \textbf{centrals de bombeig} són instal·lacions que tenen la finalitat de racionalitzar la producció d'energia a la demanda existent, ja que consumeixen els excedents d'energia durant les hores vall i subministren energia al sistema durant les hores punta.
+\end{block}.
+Existeixen dos tipus
+\begin{itemize}
+\item
+\textbf{Centrals de bombeig pur.} 
+\item
+\textbf{Centrals de bombeig mixt.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Minicentrals hidroelèctriques}
+\begin{block}{}
+Les \textbf{minicentrals hidroelèctriques} són centrals de potència compresa entre 250 i 10000 $kW$. Antigament eren les subministradores d'energia elèctrica de petits nuclis rurals i de fàbriques situades al costat dels rius.
+\end{block}
+La crisi del petroli ha significat una revitalització de l'ús de les minicentrals que, en els últims anys, han rebut una atenció especial per part del sector elèctric i de l'administració pública.
+\end{frame}
+
+\begin{frame}\frametitle{Les centrals hidroelèctriques i el medi ambient}
+Des del punt de vista mediambiental tenim:
+\begin{itemize}
+\item
+\textbf{Avantatges}
+\begin{itemize}
+\item
+No s'emeten contaminants a l'atmosfera i no generen residus directes.
+\item
+L'efecte regulador del cabal del riu pot evitar inundacions en cas de crescudes sobtades i també se n'assegura un cabal mínim en cas de sequera.
+\end{itemize}
+\item
+\textbf{Inconvenients}
+\begin{itemize}
+\item
+Pèrdua de terrenys fèrtils i poblacions que són cobertes per les aigües.
+\item
+Alteració del cabal dels rius i problemes d'erosió.
+\item
+Modificació de la vegetació i la fauna de la zona.
+\item
+Possible acumulació de matèria orgànica provocada pels vessaments d'aigües rediduals.
+\item
+La construcció de grans embassaments pot variar el clima local, típicament amb un augment de les precipitacions.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\subsection{Centrals termoelèctriques convencionals}
+\begin{frame}{}
+\begin{block}{}
+Les \textbf{centrals termoelèctriques convencionals} (o \textbf{tèrmiques}) generen energia elèctrica a partir de l'energia tèrmica produïda per la combustió de carbó, fuel o gas natural.
+\end{block}
+Totes les centrals termoelèctriques convencionals funcionen de manera similar: el combustible es crema en una caldera per obtenir vapor d'aigua, que acciona una turbina de vapor solidària al rotor d'un alternador. La diferència rau en el combustible utilitzat, el seu tratment previ, el tipus de cremadors i el tractament dels gasos emesos.
+\begin{block}{}
+Les centrals que estan dissenyades per utilitzar diferents combustibles, per exemple carbó i gas natural, s'anomenen \textbf{termoelèctriques mixtes}.
+\end{block}
+\end{frame}
+
+\begin{frame}[allowframebreaks,t]{Components d'una central termoelèctrica}
+\begin{enumerate}
+\item
+\textbf{Magatzem de combustible}
+Si s'utilitza carbó, la central té un dipòsit per disposar d'una reserva permanent. En el cas del fuel, s'emmagatzema en grans dipòsits que tenen reserves per un o dos mesos. Si s'utilitza gas natural, normalment arriba a la central en gasoductes a alta pressió.
+\item
+\textbf{Caldera} Les més utilitzades són les \textbf{calderes de radiació}. Els \textbf{reescalfadors} són parts de la caldera detinades a eliminar gotes d'aigua que acompanyen el vapor. Els \textbf{economitzadors} i \textbf{preescalfadors} aprofiten la calor residual dels gasos emesos.
+\item
+\textbf{Turbines}
+Per obtenir el màxim rendiment de la transformació d'energia cinètica del vapor en rotatòria en les turbines, estan formades per tres cossos, de pressió alta, mitjana i baixa, en ells, els àleps de la turbina van augmentant de tamany, per contrarestar la pèrdua progressiva de pressió del vapor d'aigua al travessar les turbines.
+\item
+\textbf{Condensador} Aquí el vapor procedent de les turbines es condensa abans de tornar a entrar a la caldera per tal de repetir el cicle.
+\item
+\textbf{Torre de refrigeració} serveix per refredar l'aigua refrigerant del condensador.
+\item
+\textbf{Xemeneia} té la funció d'evacuar gasos alliberats en la combustió a l'atmosfera. En funció del combustible utilitzat les xemeneie disposen de filtres més o menys sofisticats per eliminar al màxim possible les partícules sòlides i elements contaminants.
+\item
+\textbf{Equip elèctric principal} Format per l'alternador, els transformadors i el parc de distribució.
+\item
+\textbf{Sala de tractament de l'aigua d'alimentació} El bon funcionament de la caldera depèn en gran mesura de la qualitat de l'aigua utilitzada és per això que existeix aquest equipament.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Les centrals termoelèctriques i el medi ambient}
+Des del punt de vista mediambiental tenim:
+
+\textbf{Contaminació atmosfèrica.} Com ja vam veure, la utilització de combustibles fòssils comporta la producció de diòxi de carboni ($CO_{2}$), diòxids de sofre ($SO_{x}$) i òxids de nitrogen ($NO_{x}$), que contribueixen respectivament, a l'efecte hivernacle i a la pluja àcida. De tots, el carbó és el més contaminant.
+
+\textbf{Contaminació de l'aigua.} Les aigües utilitzades a la central per a la neteja dels diversos elements i d'altres estan contaminades químicament, de maner que cal un sistema de depuració abans del seu vessament a la xarxa de desguàs.
+
+\textbf{Contaminació acústica.} Per evitar molèsties a poblacions properes a la central s'aïllen elements sorollosos i s'hi construeixen pantalles acústiques.
+\end{frame}
+
+\begin{frame}[allowframebreaks,t]\frametitle{Noves tecnologies}
+El carbó és el ombustible dels què es tenen més reserves però és el més contaminant. Actualment s'estan desenvolupant noves tecnologies per tal de minimitzar-ne els efectes contaminants i millorar-ne el rendiment energètic. Les més importants són:
+\begin{itemize}
+\item
+\textbf{Sistemes de dessulfuració dels combustibles.} Permeten transformar els òxids de sofre en compostos solubles de fàcil eliminació.
+\item
+\textbf{Gasificació del carbó.} Permet l'explotació dels recursos d'una manera més eficaç.
+\item
+\textbf{Combustió en llit fluid.} És un sistema de combustió del carbó a menys temperatura, que permet que la majoria de contaminants romanguin amb els residus de la combustió i no s'emetin a l'atmosfera.
+\item
+\textbf{Centrals de cicle combinat.} Aquestes centrals utitlitzen gas natural com a combustible. La combustió es du a terme a la cambra de combustió d'una turbina de gas que arrosega directament un generador elèctric; els gasos emesos s'utilitzen per escalfar una caldera que produeix vapor que acciona una turbina convencional amb el seu generador.
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Centrals de cogeneració}
+\begin{block}{}
+Una \textbf{central de cogeneració} produeix energia elèctrica utilitzant un combustible i aprofita la calor residual.
+\end{block}
+La cogeneració permet millorar l'eficiència dels processos i obtenir rendiments energètics molt elevats, fins el 90\% en comparació amb el 35\% de les centrals termoelèctriques convencionals o el 60\% de les més eficients de cicle combinat. Les tecnologies més modernes utilitzen turbines de gas i motors de cicle dièsel. Aqueses tecnologies fan servir \emph{mòduls de cogeneració} que treballen en paral·lel, la qual cosa permet flexibilitzar la producció a les necessitats energètiques del moment.
+\end{frame}
+
+\subsection{Centrals nuclears}
+\begin{frame}{}
+\begin{block}{}
+Una \textbf{central nuclear} és una central termoelèctrica en què la font d'energia tèrmica s'obté de la fissió dels àtoms d'urani i de plutoni.
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Reactor nuclear}
+\begin{block}{}
+El \textbf{reactor nuclear} és el component més important de les centrals nuclears i constitueix el seu nucli. 
+\end{block}
+\begin{itemize}
+\item
+\textbf{Parts del reactor}
+\begin{itemize}
+\item
+\textbf{Vas del reactor} És un recipient d'acer pur que conté una \textbf{font de neutrons} (que permet iniciar la reacció en cadena) i el \textbf{combustible nuclear} (urani natural, l'urani enriquit i el plutoni).
+\item
+\textbf{Moderador} Té la funció de reduir la velocitat dels neutrons emesos en les reaccions de fissió, per assegurar el seu impacte amb els altres àtoms fissionables i mantenir la reacció. Els moderadors utilitzats són l'aigua, l'aigua pesant i el grafit. 
+\item
+\textbf{Barres de control} Formades per materials que absorbeixen neutrons. La seva missió és regular el nombre de fissions per unitat de temps que es produeixen.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks,t]\frametitle{Tipus de central nuclears}
+\begin{enumerate}
+\item
+\textbf{Centrals amb reactor d'aigua a pressió (PWR)}
+\begin{block}{}
+Aquestes centrals utilitzen urani enriquit com a combustible i aigua com a refrigerant i moderador alhora.  L'aigua dins el reactor no bull perquè es troba sotmesa a 17,22 $MPa$.
+\end{block}
+
+\item
+\textbf{Centrals amb reactor d'aigua en ebullició (BWR)}
+\begin{block}{}
+Aquestes centrals tenen característiques semblants però molt més eficients queles anteriors tot i que la seva construcció és més complexa i costosa, a banda que la turbina pot patir contaminació residual.
+\end{block}
+\item
+\textbf{Centrals amb reactors de neutrons ràpids (FNR)}
+\begin{block}{}
+En aquestes centrals el reactor no utilitz moderador. Es necessita una quantitat major de combustible respecte als reactors tèrmics i no es pot fer servir aigua com a refrigerant. Típicament es fa servir sodi.
+\end{block}
+\end{enumerate}
+\end{frame}
+
+%\subsection{Distribució de l'energia elèctrica}
+%\begin{frame}
+%Per tal de minimitzar les pèrdues d'energia al transportar l'energia elèctric, aquest s'ha de fer elevant la tensió tant com es pugui.
+%En una línia trifàsica les pèrdues de potència es calculen amb
+%$$P=3\cdot R_{L}\dot I^{2}=\frac{3\rho\cdot L\cdot I^{2}}{s}$$
+%on $P$ potència perduda per efecte joule en $W$, $R_{L}$ resistència d'un conductor de la línia en $\Omega$, I intensitat de la línia en $A$, $L$ longitud de la línia en $m$, $s$ secció de la línia en $mm^{2}$ i $\rho$ resistivitat del conductor en $\Omega\cdot m$.
+%Com que en un circuit trifàsic
+%$$I=\frac{P}{\sqrt{3}\cdot V\cdot \cos\phi}$$
+%veiem que la intensitat és inversament proporcional a la tensió $V$ de manera que en el transport de corrent s'ha d'elevar la tensió per disminuir la intensitat i minimitzar pèrdues.
+%
+%\end{frame}
+\end{document}
