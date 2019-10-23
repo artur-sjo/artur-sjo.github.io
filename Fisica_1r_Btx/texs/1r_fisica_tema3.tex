@@ -1,0 +1,154 @@
+
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[catalan]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[european]{circuitikz}
+\usetheme{Warsaw}
+\usecolortheme{seagull}
+\justifying
+
+\beamertemplatetransparentcovereddynamic
+%\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+
+
+\begin{document}
+\title{Física 1r Batxillerat}
+\author{Artur Arroyo}
+\date{}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Física 1r Batxillerat}\tableofcontents
+%[pausesubsections]
+\end{frame}
+
+
+\section{Circuits elèctrics simples}
+%\begin{frame}\frametitle{Title}
+%Each frame should have a title.
+%\end{frame}
+
+
+\subsection{Elements d'un circuit elèctric}
+
+\begin{frame}\frametitle{Elements d'un circuit elèctric}
+\begin{itemize}
+\item
+\textbf{Generador:} subministra una diferència de potencial entre dos punts determinats del circuit a fi de comunicar energia als electrons.
+\item
+\textbf{Conductor:} connecta elèctricament els diferents elements del circuit. Considerarem que no pateix pèrdues per efecte Joule.
+\item
+\textbf{Receptors:} reben l'energia elèctrica que subministra el generador.
+\item
+\textbf{Interruptors:} dispositius opcionals, permeten obrir o tancar el circuit a voluntat.
+\end{itemize}
+\end{frame}
+\subsection{Associació de resistències}
+\begin{frame}\frametitle{Associació de resistències}
+La resistència equivalent de dues $R_{1}$, $R_{2}$ que es troben connectades en sèrie és la seva suma aritmètica.
+\begin{center}
+\begin{tikzpicture}[scale=1]
+%\draw[step=1cm,red,very thin] (-3,-3) grid (8,4);
+
+%\draw (2.5,0.5) circle[radius=0.1cm] ;
+
+\draw[color=black, thick]
+    (-1,2) to [R, l=$R_1$, o-] (3,2) (3,2) to [R, l=$R_2$, -o] (6,2);
+
+\draw[color=black, thick]
+    (-1,-1) to [R,  o-o]  (6,-1)
+    (2.5,-0.5) node[]{$R_{eq}=R_{1}+R_{2}$};
+\end{tikzpicture}
+\end{center}
+En aquest cas cal notar que la intensitat que les travessa és la mateixa i el potencial que cau en cadscuna d'elles és, en general, diferent.
+\end{frame}
+
+\begin{frame}
+La resistència equivalent de dues $R_{1}$, $R_{2}$ que es troben connectades en paral·lel és troba amb la fòrmula $\frac{1}{R_{eq}}{=\frac{1}{R_{1}}+\frac{1}{R_{2}}}$
+\begin{center}
+\begin{tikzpicture}[scale=1]
+%\draw[step=1cm,red,very thin] (-3,-3) grid (8,4);
+%\draw (0,0) circle[radius=0.1cm] ;
+
+\draw[color=black, thick] (-2,2) to [short,o-] (0,2) -- (0,3) to [R, l=$R_1$] (5,3) -- (5,1)
+to [R, l_=$R_2$] (0,1) -- (0,2)  (5,2) to [short,-o] (7,2);
+\draw[color=black, thick] (-1,-1.5) to [R, o-o] (6,-1.5) ;
+\draw[color=black, thick] (2.6,-0.8) node[]{$R_{eq}=\frac{R_{1}\cdot R_{2}}{R_{1}+ R_{2}}$};
+
+\end{tikzpicture}
+\end{center}
+En aquest cas el potencial que cau en cadascuna d'elles és el mateix i la intensitat que les travessa és, en general, diferent.
+\end{frame}
+
+\begin{frame}\frametitle{Exemple}
+Volem calcular la intensitat que circula per la resistència de $20\,\Omega$ del circuit
+\begin{center}
+\begin{tikzpicture}[scale=1]
+%\draw[step=1cm,red,very thin] (-3,-2) grid (8,4);
+%\draw (0,0) circle[radius=0.1cm] ;
+\draw[color=black, thick] (0,0) to [short,*-] (-2,0) to [R, l=$20\Omega$] (-2,3) -- (0,3)
+to [battery1, l=$55V$] (5,3)--(7,3)--(7,0) to [short,*-] (5,0)--(5,1)--(4,1) to [R, l_=$10\Omega$] (1,1)--(0,1)--(0,-1)
+--(1,-1) to [R, l=$30\Omega$] (4,-1)--(5,-1)--(5,0);
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\draw[color=black, thick] (0,0) --(-2,0) to [R, l=$20\Omega$] (-2,3) --(0,3)
+to [battery1, l=$55V$] (5,3) --(7,3) -- (7,0) to [R, l_=$7.5\Omega$] (0,0);
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\draw[color=black, thick] (0,0) -- (-2,0)to [R, l=$27.5\Omega$] (-2,3) --(0,3)
+to [battery1, l=$55V$] (5,3) --(7,3) -- (7,0) -- (0,0);
+\end{tikzpicture}
+\end{center}
+\end{frame}
+\subsection{Derivacions}
+\begin{frame}
+De forma que tenim $$V=I\cdot R\Longrightarrow I=\frac{55}{27,5}=2\,A$$
+Aquesta intensitat és la que travessa la resistència de $20\Omega$, però al arribar a la derivació es divideix de forma proporcional per les dues branques on hi ha les resistències de $10\Omega$ i $30\Omega$. Per calcular quina intensitat circula per cadascuna farem servir l'esquema següent
+\end{frame}
+
+\begin{frame}\frametitle{Derivacions}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+%\draw[step=1cm,red,very thin] (-3,-2) grid (8,4);
+%\draw (0,0) circle[radius=0.1cm] ;
+\draw[color=black, thick] (0,0) to [short,-*] (-2,0) (7,0) to [short,*-] (5,0)--(5,1)--(4,1) to [R, l_=$R_{1}$] (1,1)--(0,1)--(0,-1)
+--(1,-1) to [R, l=$R_{2}$] (4,-1)--(5,-1)--(5,0);
+\draw (-1,0.5) node[]{$I$};
+\draw (-1,0.3) node[]{$\longrightarrow$};
+\draw (1.2,1.5) node[]{$I_{1}$};
+\draw (1.2,1.2) node[]{$\longrightarrow$};
+\draw (1.2,-1.4) node[]{$I_{2}$};
+\draw (1.2,-1.2) node[]{$\longrightarrow$};
+\end{tikzpicture}
+\end{center}
+I es pot demostrar que és $$I_{1}=I\frac{R_{2}}{R_{1}+R_{2}}\qquad I_{2}=I\frac{R_{1}}{R_{1}+R_{2}}$$
+\end{frame}
+
+
+
+
+
+
+
+\end{document}

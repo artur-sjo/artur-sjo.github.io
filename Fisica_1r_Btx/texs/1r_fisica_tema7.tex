@@ -1,0 +1,185 @@
+
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[catalan]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[european]{circuitikz}
+\usepackage{graphicx}
+\usetheme{Warsaw}
+\usecolortheme{seagull}
+\justifying
+
+\beamertemplatetransparentcovereddynamic
+%\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+\begin{document}
+\title{Física 1r Batxillerat}
+\author{Artur Arroyo}
+\date{}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Física 1r Batxillerat}\tableofcontents
+%[pausesubsections]
+\end{frame}
+
+\section{Cinemàtica (II)}
+
+\subsection{Moviment rectilini i uniforme}
+\begin{frame}{Moviment rectilini i uniforme, MRU.}
+L'equació del moviment rectilini i uniforme (acceleració nul·la) és
+$$x=x_{0}+v_{0}(t-t_{0})$$
+Si només hi ha un objecte a estudiar, sempre podrem triar el valor de l'espai inicial $x_{0}$ i temps inicial $t_{0}$ segons ens convingui, típicament zero ambdós. Si hi ha més d'un objecte en moviment nomes podrem privilegiar d'aquesta manera a un d'ells.
+\end{frame}
+
+\subsection{Moviments amb acceleració constant}
+\begin{frame}\frametitle{Moviment rectilini uniformement accelerat, MRUA.}
+Les equacions del moviment rectilini i uniforme (aceleració constant) són
+\begin{block}{}
+\begin{eqnarray}
+x=x_{0}+v_{0}(t-t_{0})+\frac{1}{2}a(t-t_{0})^{2}\\[0.3cm]
+v=v_{0}+a(t-t_{0})\\[0.3cm]
+v^{2}-v^{2}_{0}=2a(x-x_{0})
+\end{eqnarray}
+\end{block}
+Un cop més, sempre podrem triar les condicions inicials si només hi ha un objecte en moviment.
+\end{frame}
+
+
+\begin{frame}\frametitle{Moviment vertical}
+Les equacions són les mateixes que les del MRUA, només hem de canviar per comoditat la variable $x$ per, per exemple, $y$ i l'acceleració pren sempre el valor $g=9,8\,m/s^{2}$ de manera que tenim
+ \begin{block}{}
+\begin{eqnarray}
+y=y_{0}+v_{0}(t-t_{0})-\frac{1}{2}g(t-t_{0})^{2}\\[0.3cm]
+v=v_{0}-g(t-t_{0})\\[0.3cm]
+v^{2}-v^{2}_{0}=-2g(y-y_{0})
+\end{eqnarray}
+\end{block}
+On de forma implícita s'ha imposat un criteri de signes tal que la velocitat té signe positiu si l'objecte es mou cap a dalt i negatiu si es mou cap a baix.
+\end{frame}
+
+\begin{frame}[allowframebreaks,t]\frametitle{Tir parabòlic}
+Per estudiar el tir parabòlic suposarem que llancem un objecte amb velocitat $v_{0}$ que forma un angle $\alpha$ amb l'horitzontal. Per simplicitat discutirem primer el cas simplificat en que \emph{no hi ha altura inicial}. A més, també suposarem que no hi ha temps inicial.
+Descomposarem la velocitat $v_{0}$ en l'eix horitzontal, on no hi ha acceleració, i el vertical, on l'acceleració és la de la gravetat.
+\begin{eqnarray}
+v_{0x}=v_{0}\cos\alpha\\[0.3cm]
+v_{0y}=v_{0}\sin\alpha
+\end{eqnarray}
+De forma que les equacions del moviment s'escriuen
+\begin{eqnarray}
+x=v_{0}\cos\alpha t\\[0.3cm]
+y=v_{0}\sin\alpha t-\frac{1}{2}gt^{2}
+\end{eqnarray}
+%\begin{frame}
+En el tir parabòlic és típic voler conèixer:
+\begin{itemize}
+\item
+Temps de vol $t_{vol}$
+\item
+Abast màxim $x_{max}$
+\item
+Altura màxima $y_{max}$
+\item
+Velocitat en qualsevol temps (en particular amb la que arriba a terra)
+\end{itemize}
+Per trobar el temps de vol buscarem per quins valors del temps és $y=0$
+$$0=v_{0}\sin\alpha t-\frac{1}{2}gt^{2}$$
+d'on
+\[
+\left\{\begin{array}{c}
+t=0\\[0.3cm]
+t_{v}=\frac{2v_{0}\sin\alpha}{g}
+\end{array}\right.
+\]
+per trobar l'abast màxim en tenim prou de substituir el temps de vol en l'equació del moviment per la $x$. Llavors
+$$x_{max}=v_{0}\cos\alpha t_{v}=\frac{2v_{0}^{2}\cos\alpha\sin\alpha}{g}=\frac{v_{0}^{2}\sin2\alpha}{g}$$
+
+Per trobar l'altura màxima aprofitarem la simetria de la paràbola i calcularem l'altura a la que es troba quan ha transcorregut la meitat del temps de vol, així
+$$y_{max}=y\left(\frac{t_{v}}{2}\right)=v_{0}\sin\alpha\frac{v_{0}\sin\alpha}{g}-\frac{1}{2}g\left(\frac{v_{0}\sin\alpha}{g}\right)^{2}$$
+$$y_{max}=\frac{v_{0}^{2}\sin^{2}\alpha}{2g}$$
+Per una altra banda, la velocitat per qualsevol temps es pot calcular com
+$$v=\sqrt{v_{0x}^{2}+v_{0y}^{2}}=\sqrt{(v_{0}\cos\alpha)^{2}+(v_{0}\sin\alpha-gt)^{2}}$$
+
+En el cas que l'objecte sotmés al tir parabòlic es llancés des d'una altura $y_{0}$ hem d'escriure les equacions de la següent manera
+\begin{eqnarray}
+x=v_{0}\cos\alpha t\\[0.3cm]
+y=y_{0}+v_{0}\sin\alpha t-\frac{1}{2}gt^{2}
+\end{eqnarray}
+el temps de vol el trobarem com en el cas més senzill, la diferència és que ara haurem de resoldre una equació de segon grau complerta de la que obtindrem dos valors del temps, un positiu $t_{+}$ i un negatiu $t_{-}$. El temps de vol coincideix amb $t_{+}$. Per calcular l'altura màxima podem seguir explotant la simetria de la paràbola però ara haurem de fer 
+$$y_{max}=y\left(\frac{t_{+}+t_{-}}{2}\right)$$
+\end{frame}
+
+
+
+
+ \subsection{Moviments circulars}
+
+\begin{frame}[allowframebreaks,t]\frametitle{Moviment circular}
+ \justifying
+ \begin{block}{}
+ S'anomena \textbf{moviment circular}, el moviment la trajectòria del qual és una circumferència. Com la velocitat canvia constantment de direcció, hi ha sempre acceleració.
+ \end{block}
+ Farem servir les mateixes equacions de cinemàtica canviant les magnituds lineals per les corresponents angulars.
+ \begin{itemize}
+ \item
+ $x\longrightarrow \theta$
+ \item
+ $v\longrightarrow \omega$
+ \item
+ $a\longrightarrow \alpha$
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+En una circumferència de radi $R$, la relació entre la longitud d'arc (\textbf{s}) recorreguda per el mòbil, i l'angle descrit, ve donada per
+$$s=\theta R$$
+de forma semblant, la relació entre la velocitat lineal i angular s'escriu
+$$v=\omega R$$
+i finalment, l'expressió que lliga l'acceleració lineal i angular és
+$$a_{t}=\alpha R$$
+on hem escrit $a_{t}$, acceleració tangencial per distingir-la de $a_{n}$, acceleració normal, que més endevant presentarem.
+\end{frame}
+
+\begin{frame}\frametitle{Moviment circular uniforme, MCU}
+En el moviment circular uniforme la velocitat angular és constant, per tant, no hi ha acceleració tangencial, encara que sí normal o centrípeta. Ha de ser així, ja que la direcció de la velocitat està canviant contínuament. Aquesta acceleració s'anomena centrípeta perque va dirigida cap el centre de la circumferència que descriu el mòbil i es calcula com
+$$a_{n}=\frac{v^{2}}{R}=\omega^{2}R$$
+L'equació que descriu el moviment circular uniforme és
+$$\theta=\theta_{0}+\omega (t-t_{0})$$
+Com en casos anteriors, si només hi ha un objecte, sempre podrem triar les condicions inicials i, d'aquesta manera, treballar amb una expressió més senzilla.
+\end{frame}
+
+\begin{frame}\frametitle{El període i la freqüència}
+\begin{block}{}
+Definim \textbf{període}, $T$ com el temps necessari per que el mòbil doni una volta completa. Es mesura en segons ($s$).
+$$T=\frac{2\pi}{\omega}$$
+\end{block}
+
+\begin{block}{}
+Definim \textbf{freqüència}, $f$ o $\nu$ (nu) com les voltes que dóna el mòbil en un segon. Es mesura en $s^{-1}$ que s'anomenen hertzs (Hz).
+$$\omega=2\pi f=\frac{2\pi}{T}$$
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Moviment circular uniformement accelerat, MCUA}
+\justifying
+ \begin{block}{}
+ S'anomena \textbf{moviment circular uniformement accelerat}, MCUA, el moviment la trajectòria del qual és una circumferència i que té acceleració angular constant.
+ \end{block}
+ Les equacions que farem servir són
+\begin{eqnarray}
+\theta=\theta_{0}+\omega_{0}(t-t_{0})+\frac{1}{2}\alpha(t-t_{0})^{2}\\[0.3cm]
+\omega=\omega_{0}+\alpha(t-t_{0})\\[0.3cm]
+\omega^{2}-\omega^{2}_{0}=2\alpha(\theta-\theta_{0})
+\end{eqnarray}
+
+
+
+\end{frame}
+
+\end{document}

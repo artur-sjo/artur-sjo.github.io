@@ -1,0 +1,178 @@
+
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[catalan]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[european]{circuitikz}
+\usepackage{graphicx}
+\usetheme{Warsaw}
+\usecolortheme{seagull}
+\justifying
+
+\beamertemplatetransparentcovereddynamic
+%\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+\begin{document}
+\title{Física 1r Batxillerat}
+\author{Artur Arroyo}
+\date{}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Física 1r Batxillerat}\tableofcontents
+%[pausesubsections]
+\end{frame}
+
+\section{La llum}
+
+\subsection{Naturalesa de la llum}
+
+\begin{frame}\frametitle{La teoria corpuscular i la teoria ondulatòria}
+Al llarg de la història s'ha debatut sobre si la llum estava formada per corpuscles diminuts o es tractava d'una ona. Algunes experiències, reflexió i refracció, per exemple, es van poder explicar mitjançant un model corpuscular mentre que altres, interferències, difracció, només es podien entendre si es considerava la llum com una ona. Actualment parlem de \textbf{dualitat ona-partícula} per referir-nos a que els fenòmens relacionats amb la \textbf{propagació de la llum} s'expliquen mitjançant la \textbf{teoria ondulatòria}, mentre que els relacionats amb la \textbf{interacció de la llum amb la matèria} s'expliquen a través de la \textbf{teoria corpuscular}.
+\end{frame}
+
+\begin{frame}[allowframebreaks,t]\frametitle{La llum com a ona}
+Les ones es poden classificar com:
+\begin{itemize}
+\item
+\textbf{Mecàniques}
+
+Necessiten un medi material per a propagar-se. Per exemple, el so. La velocitat de propagació depén, entre d'altres paràmetres, de la densitat del medi i en general, augmenta amb aquesta.
+$$\quad$$
+\item
+\textbf{Electromagnètiques}
+
+No necessiten cap medi material per tal de propagar-se. Per exemple, la llum. Totes les ones electromagnètiques es mouen a la mateixa velocitat en el buit, $3\cdot 10^{8}m/s$
+\end{itemize}
+$$\quad$$
+$$\quad$$
+Les ones també es poden classificar en:
+\begin{itemize}
+\item
+\textbf{Longitudinals}
+
+La direcció de la pertorbació és la mateixa que la de la propagació de l'ona.
+\item
+\textbf{Transversals}
+
+La direcció de la pertorbació és perpendicular a la direcció de la propagació de l'ona.
+\end{itemize}
+\begin{center}
+\includegraphics[scale=0.5]{ones.jpg}
+\end{center}
+
+Les ones que es propaguen en una única direcció són ones \textbf{unidimensionals}, per exemple les generades en una corda (que en realitat vibra en un pla a l'espai). Les ones \textbf{bidimensionals} es propaguen al llarg d'un pla, com per exemple l'aigua en un estany quan hi llencem una pedra (s'ha de notar que el moviment vibratori es dona en l'espai) i finalment les ones \textbf{tridimensionals}, que es progaguen a l'espai, com per exemple el so que produeix un instrument musical.
+$$\qquad$$
+$$\qquad$$
+$$\qquad$$
+$$\qquad$$
+$$\qquad$$
+\begin{center}
+\emph{Conceptes importants associats a una ona}
+\end{center}
+\begin{itemize}
+\item
+\textbf{Front d'ona} Lloc geomètric dels punts de l'espai que estan en el mateix estat de vibració.
+\item
+\textbf{Raig} Direccions perpendiculars als fronts d'ona.
+\begin{center}
+\includegraphics[scale=0.7]{front.jpg}
+\end{center}
+\item
+\textbf{Amplitud} ($A$) Valor màxim de la magnitud física que representa l'ona. Definim la \textbf{intensitat} de l'ona com l'energia per unitat de temps i de superfície transportada per l'ona ($W/m^{2}$). La intensitat és proporcional al quadrat de l'amplitud de l'ona.
+\begin{center}
+\includegraphics[scale=0.3]{ampli.jpg}
+\end{center}
+\item
+\textbf{Longitud d'ona} ($\lambda$)
+És la distància que hi ha entre dos punts que estan en el mateix estat de vibració. Es diu que els punts que estan separats un nombre enter de longituds d'ona \textbf{es troben en fase.}
+\item
+\textbf{Freqüència} ($f$) És el nombre d'oscil·lacions que fa un punt que està vibrant per unitat de temps. La freqüència es mesura en hertz ($HZ$) amb $1\,Hz =1\,s^{-1}$
+
+\item
+\textbf{Període} ($T$) És el temps necessari perquè un punt de l'ona faci una oscil·lació completa. Es compleix que $T=\frac{1}{f}$
+
+\item
+\textbf{Velocitat de grup o de fase} ($v$) És la velocitat a la que es desplaça l'ona. No és la mateixa que la velocitat amb que vibren els seus punts.
+Es compleix
+$$\lambda=v\cdot T$$
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{La llum segons el model corpuscular}
+El model corpuscular de la llum suposa que aquesta està formada per corpuscles o \emph{quanta} de llum anomenats fotons. L'energia de cada fotó ve donada per
+$$E=h\cdot f$$
+on $h=6,626\cdot10^{-34}\,J\cdot s$ és l'anomenada \textbf{constant de Planck}, i $f$ és la freqüència de la llum.
+\end{frame}
+
+\subsection{L'espectre electromagnètic}
+
+\begin{frame}{}
+Segons la teoria ondulatòria, la llum és una ona electromagnètica transversal que consisteix en la propagació d'un camp elèctric i un camp magnètic variables perpendiculars entre sí i a la direcció de propagació. De tota manera, hi ha altres ones electromagnètiques que recollim en l'anomenat espectre electromagnètic.
+\begin{center}
+\includegraphics[scale=0.4]{espectre.jpg}
+\end{center}
+\end{frame}
+
+\subsection{Propagació de la llum. Fenòmens ondulatoris.}
+
+\begin{frame}\frametitle{Índex de refracció}
+La velocitat de la llum depèn del medi en el que es troba. Definim l'índex de refracció, $n$, com
+$$n=\frac{c}{v}$$
+on $c=3\cdot 10^{8}\,m/s$
+\end{frame}
+
+\begin{frame}\frametitle{Principi de Huygens}
+\begin{block}{}
+El 1678, Huygens va proposar que tot punt al que arriba una pertorbació lluminosa es converteix al seu torn en font d'una ona esfèrica i la resultant d'aquestes ones secundàries determina el front d'ona en l'instant següent.
+\end{block}
+\begin{center}
+\includegraphics[scale=0.7]{huy.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}[allowframebreaks,t]\frametitle{Reflexió i refracció}
+Quan un feix de llum troba una superfície de separació entre dos medis, com ara una superfície aire-vidre o aire-aigua, part de la llum es reflexa i part es refracta.
+\begin{center}
+\includegraphics[scale=0.4]{llum.jpg}
+\end{center}
+\begin{itemize}
+\item
+Experimentalment es veu que l'angle d'incidència és igual que l'angle de reflexió.
+\item
+Els tres raigs es troben en el mateix pla.
+\item
+La relació entre l'angle d'incidència i el refractat ve donada per la llei d'\textbf{Snell}
+$$n_{1}\sin\theta_{1}=n_{2}\sin\theta_{2}$$
+\end{itemize}
+Quan la llum passa del medi amb índex de refracció més gran al medi amb índex de refracció més petit, es pot donar l'anomenada \textbf{reflexió total}.
+\begin{center}
+\includegraphics[scale=0.5]{total.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Dispersió}
+L'índex de refracció dels materials depèn en realitat de la longitud d'ona de la llum incident, així, les longituds d'ona curtes, (color blau) tenen índex de refracció més gran que les llargues (color vermell), d'aquesta manera, al travessar la llum blanca un material, aquesta se separa en els seus components originals. L'arc de sant Martí és un exemple de dispersió a través de les gotes d'aigua que es troben a l'atmosfera quan plou.
+\begin{center}
+\includegraphics[scale=0.3]{rainbow.jpg}
+
+\end{center}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\end{document}
