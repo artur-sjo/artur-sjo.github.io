@@ -1,3 +1,4 @@
 Exercici 43 corregits tecno 2n estàtica. Es fa servir valor % per calcular llargada final. 
 Exercici 2 falta unitats Coulombs. Parcial camp electric resolt.
 Revisar, en general, l'ús que es fa a les correccions de 8,99 10^{9}.
+Revisar resultat frequencia apartat b exercici 64, camp magnetic fisica
