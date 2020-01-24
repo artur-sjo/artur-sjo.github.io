@@ -1,0 +1,1 @@
+Exercici 43 corregits tecno 2n estàtica. Es fa servir valor % per calcular llargada final. 
