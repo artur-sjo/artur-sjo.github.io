@@ -1,3 +1,4 @@
 Revisar, en general, l'ús que es fa a les correccions de 8,99 10^{9}.
 Revisar resultat frequencia apartat b exercici 64, camp magnetic fisica
 Afegir esquema acceleracions i velocitat tema circular als apunts de Fisica de primer 
+Exercicis resolts tecno electromecanica, apartat c) exer 98, enlloc de 2450 és 2540 i dóna un altre resultat.
