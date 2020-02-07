@@ -1,3 +1,4 @@
 Revisar, en general, l'ús que es fa a les correccions de 8,99 10^{9}.
 Afegir esquema acceleracions i velocitat tema circular als apunts de Fisica de primer 
+Corregir T=mg en exercici resolt 49 apartat b) problemes estatica tecno 2n
 
