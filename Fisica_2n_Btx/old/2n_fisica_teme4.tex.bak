@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt]{article}
+%\pagestyle{empty}
+
+\usepackage[latin1]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+%\usepackage{helvet}
+\topmargin -1.5cm
+\begin{document}
+\large \textsc{\underline{Tema 4 El camp magnètic}}
+
+\normalsize
+
+ \vspace{1cm}
+\begin{enumerate}
+\item
+ \textbf{Característiques. Comportament de la matèria davant el magnetisme.}
+ 
+ 
+La majoria dels materials responen a l'aplicació d'un camp magnètic $\vec{B}$ extern produïnt la seva pròpia magnetització, i per tant, el seu propi camp magnètic al seu interior. Segons el seu comportament magnètic els materials es poden classificar en
+\begin{itemize}
+\item
+\textbf{Ferromagnètics}: produeixen una magnetització, (que pot romandre al desactivar el camp extern), en el mateix sentit que el camp extern, de forma que fan augmentar el valor total del camp en el seu interior. Per exemple, el $\mu$-metall pot multiplicar per un factor $10^{5}$ el camp aplicat. Això es degut a la seva alta \emph{permeabilitat magnètica} i el fa molt útil com a \emph{escut magnètic} ja que condueix el camp extern pel seu interior, aconseguint així un efecte d'apantallament, que no és possible d'una altra manera pel fet que no existeixen monopols magnètics.
+\item
+ \textbf{Paramagnètics}: produeixen una magnetització lleu en el mateix sentit que el camp aplicat.
+\item
+\textbf{Diamagnètics}: produeixen una magnetització que s'oposa al camp aplicat extern.
+\end{itemize}
+\item
+\textbf{Efecte del camp magnètic sobre una càrrega en moviment. Llei de Lorentz.}
+Una partícula amb càrrega $q$ que es mou amb velocitat $\vec{v}$ en el si d'un camp magnètic $\vec{B}$ sentirà una força donada per
+$$\vec{F}=q\vec{v}\times\vec{B}$$
+
+\item
+\textbf{Gravitació.}
+\begin{enumerate}
+\item
+Quin significat té la coneguda expressió $g=9,81\,m/s^{2}$?
+Si considerem un objecte de massa $m$ sobre la superfície terrestre, aquest es veu atret amb una força
+$$F=\frac{GM_{T}m}{R_{T}^{2}}$$
+a aquesta força amb que la Terra atreu l'objecte se l'anomena pes de l'objecte, de forma que comparant l'expressió anterior amb la que relaciona pes i massa, $P=mg$, veiem que és
+$$g=\frac{GM_{T}}{R_{T}^{2}}=9,81\,m/s^{2}$$
+aquest valor de l'acceleració de la gravetat l'escriurem en realitat com $g_{0}$ ja que el camp gravitatori depèn de la distància al centre de la Terra en la forma
+$$g(h)=\frac{GM_{T}}{{(R_{T}+h)}^{2}}$$
+En particular, tenim una relació útil entre les constants que apareixen
+$$GM_{T}=g_{0}R_{T}^{2}$$
+\item
+\textbf{Òrbites circulars estables.}
+Les órbites circulars estables d'un objecte de massa $m$ al voltant d'un planeta de massa $M$ i radi $R$, a una alçada $h$ sobre la superfície del sosdit planeta es poden trobar per aplicació de la \emph{segona llei de Newton}
+$$F=ma_{c}$$
+$$\frac{GMm}{(R+h)^{2}}=m\frac{v^{2}}{R+h}$$
+$$v=\sqrt{\frac{GM}{R+h}}$$
+on notem que aquesta velocitat de depèn de la massa de l'objecte en órbita, i que aquesta velocitat disminueix amb la distància al centre de forces.
+\end{enumerate}
+L'energia mecànica d'un objecte en òrbita es troba com
+$$E_{M}=E_{c}+E_{p}=\frac{1}{2}mv^{2}-\frac{GMm}{R+h}$$
+on el terme d'energia potencial gravitatòria s'ha escrit demanant que valgui zero a l'infinit.
+Si substituïm l'expressió de la velocitat orbital trobada abans tenim
+$$E_{M}=\frac{1}{2}m\frac{GM}{R+h}-\frac{GMm}{R+h}=-\frac{1}{2}\frac{GMm}{R+h}$$
+com es veu, l'energia mecànica (i la potencial) sempre és negativa, detall que caracteritza els sistemes lligats gravitatòriament.
+\item
+\textbf{Órbites geoestacionàries.}
+En moltes aplicacions civils i militars convé situar un satèl·lit en òrbita de forma que sempre es trobi sobre el mateix punt de la superfície de la Terra. Per calcular l'alçada d'aquestes òrbites n'hi ha prou d'aplicar la tercera llei de Kepler demanant que el període sigui de 24 hores. Es deixa com a exercici calcular aquest alçada.
+\item
+\textbf{Canvis d'òrbita.}
+Suposem que tenim un satèl·lit en òrbita a una alçada $h_{1}$ sobre la superfície terrestre i el volem posar en una òrbita més llunyana d'alçada $h_{2}$. El treball que hem de fer és equivalent a la variació d'energia mecànica, de forma que tenim
+$$W_{h_{1}\rightarrow h_{2}}=\Delta E_{M}=-\frac{1}{2}\frac{GM_{T}m}{R_{T}+h_{2}}+\frac{1}{2}\frac{GM_{T}m}{R_{T}+h_{1}}$$
+és fàcil comprovar que aquest treball és, efectivament, sempre positiu si $h_{2}>h_{1}$.
+\item
+\textbf{Posada en òrbita.}
+Si el que volem és calcular el treball que cal fer per posar un satèl·lit en òrbita a una alçada $h$ llançant-lo desde la superfície terrestre, ho farem de forma semblant
+$$W_{R_{T}\rightarrow h}=\Delta E_{M}=-\frac{1}{2}\frac{GM_{T}m}{R_{T}+h}+\frac{GM_{T}m}{R_{T}}$$
+on ara hem suposat que l'energia mecànica sobre la superfície terrestre només té la contribució de l'energia potencial.
+\item
+\textbf{Velocitat d'escapament.}
+Si volem llançar amb una trajetòria \emph{radial} un objecte desde una altura $h$ sobre la superfície terrestre amb prou velocitat per que no torni mai més, quant ha de valdre aquesta velocitat?
+El que farem és demanar que l'energia mecànica valgui zero, el valor més petit perqu deixi d'estar lligat gravitatòriament a la Terra. Llavors
+$$0=E_{M}=\frac{1}{2}mv^{2}-\frac{GMm}{R+h}$$
+d'on obtenim
+$$v_{e}=\sqrt{\frac{2GM}{R+h}}$$
+Quan la velocitat d'escapament d'un objecte estelar és $v_{e}=3\cdot 10^{8}\,m/s=c$ llavors ni tan sols la llum pot marxar de la seva superfície i podem pensar que és un forat negre.
+El Radi d'Schwarzschild, $R_{S}$ d'un objecte estelar s'obté calculant quin hauria de ser el seu radi per tal que la seva velocitat d'escapament sigui la de la llum, suposant que la seva massa no varia. Es deixa com a exercici calcular $R_{S}$ per la Terra.
+\end{enumerate}
+\end{document} 
