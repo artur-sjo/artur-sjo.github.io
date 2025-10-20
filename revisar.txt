@@ -1,4 +1,4 @@
-Revisar, en general, l'ús que es fa a les correccions de 8,99 10^{9}.
+provaRevisar, en general, l'ús que es fa a les correccions de 8,99 10^{9}.
 Afegir esquema acceleracions i velocitat tema circular als apunts de Fisica de primer  
 Exercici funcions logiques apartat e) darrera 'a' ha de ser 'c'
 Exercici 98 llista fisica, s'ha de posar en el tema de camp electric
