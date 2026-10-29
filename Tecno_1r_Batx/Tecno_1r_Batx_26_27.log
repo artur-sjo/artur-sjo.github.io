@@ -1,0 +1,34 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.27)  29 OCT 2026 14:22
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Tecno_1r_Batx_26_27.html
+(./Tecno_1r_Batx_26_27.html
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 <
+     !DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3....
+
+? x
+ 
+Here is how much of TeX's memory you used:
+ 16 strings out of 468657
+ 532 string characters out of 5441646
+ 433756 words of memory out of 5000000
+ 28848 multiletter control sequences out of 15000+600000
+ 627721 words of font info for 40 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
+ 15i,0n,18p,169b,14s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
